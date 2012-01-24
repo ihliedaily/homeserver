@@ -1,4 +1,94 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'2 Engel für Charlie' /}
 
-#{welcome /}
+<div id="header">
+    <div id="logo">
+        <h1><a href="#">2 Engel für Charlie</a></h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="#" class="first">Homepage</a></li>
+            <li class="current_page_item"><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!-- end #menu -->
+</div>
+<!-- end #header -->
+<hr />
+<div id="wrapper">
+    <!-- end #logo -->
+    <div id="two-columns">
+        <div class="col1">
+            <div id="foobar">
+                <div class="navigation"> <a href="#" class="first">[ &lt;&lt; ]</a> &nbsp; <a href="#" class="previous">[ &lt; ]</a> &nbsp; <a href="#" class="next">[ &gt; ]</a> &nbsp; <a href="#" class="last">[ &gt;&gt; ]</a> </div>
+                <div class="viewer">
+                    <div class="reel">
+                        <div class="slide"> <img src="@{'public/images/1.jpg'}" alt=""> <span>Tschnulliwurst (süß)</span> </div>
+                        <div class="slide"> <img src="@{'public/images/2.jpg'}" alt=""> <span>Tschnulliwurst-Mama (sexy)</span> </div>
+                        <div class="slide"> <img src="@{'public/images/3.jpg'}" alt=""> <span>Tschnulliwurst-Papa (TECHNO!!!)</span> </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+
+                $('#foobar').slidertron({
+                    viewerSelector:			'.viewer',
+                    reelSelector:			'.viewer .reel',
+                    slidesSelector:			'.viewer .reel .slide',
+                    navPreviousSelector:	'.previous',
+                    navNextSelector:		'.next',
+                    navFirstSelector:		'.first',
+                    navLastSelector:		'.last'
+                });
+						
+            </script>
+        </div>
+        <div class="col2">
+            <blockquote>&#8220;&nbsp;Itschi, Mitschi, Pitiplatsch - Ooochen, Fleesch und Beene!&nbsp;&#8221;</blockquote>
+        </div>
+    </div>
+</div>
+<div id="page">
+    <div id="page-bgtop">
+        <div id="content">
+            <div class="post">
+                <p class="meta"><em><span class="date">Dienstag, 24. Janur 2012</span> geschrieben um 12:11 von <a href="#">Ihle</a></em></p>
+                <h2 class="title"><a href="#">Der erste Versuch</a></h2>
+                <div class="entry">
+                    <p>Es gibt noch nichts zu berichten :)</p>
+                </div>
+            </div>
+        </div>
+        <!-- end #content -->
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <h2>Über mich ...</h2>
+                    <p>Das hier ist mein erster Versuch eine private Foto-Galerie zu erstellen. Das Ganze soll mit der Zeit wachsen und größer werden. Sie wird nicht öffentlich sein, wofür ich ein User-Management einbauen werde. Zusätzlich soll man einfach Bilder hochladen und verwalten können (mit Blick auf Phia als Familien-Oberhaupt). Verbesserungsvorschläge sind jederzeit willkommen :)</p>
+                </li>
+                <li>
+                    <h2>Linksammlung</h2>
+                    <ul>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Magna lacus bibendum mauris</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                        <li><a href="#">Velit semper nisi molestie</a></li>
+                        <li><a href="#">Eget tempor eget nonummy</a></li>
+                        <li><a href="#">Nec metus sed donec</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- end #sidebar -->
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+    <!-- end #page -->
+</div>
+<div id="footer">
+    <p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
