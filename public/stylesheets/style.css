@@ -103,7 +103,7 @@ hr {
 
 #menu {
 	float: right;
-	width: 500px;
+	width: 509px;
 	height: 50px;
 }
 
@@ -484,7 +484,7 @@ hr {
 	float: left;
 	width: 670px;
 	height: 385px;
-	background: red;
+	background: #ECECEC;
 }
 
 #two-columns .col2 {

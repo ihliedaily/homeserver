@@ -1,0 +1,37 @@
+#{extends 'main_upper.html' /}
+#{set title:'Post anlegen ...' /}
+
+<form action="@{Post.addPost()}" method="GET">
+
+    <div class="col1">
+        <div style="margin-top: 20px;">
+            Schreibe einen neuen Blog-Eintrag ...
+            <table style="margin-top: 20px;">
+                <tbody>
+                    <tr>
+                        <td class="addPostTDLabel">
+                            Titel: 
+                        </td>
+                        <td>
+                            <input type="text" name="title" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addPostTDLabel">
+                            Inhalt: 
+                        </td>
+                        <td>
+                            <textarea name="body" rows="10" cols="60"></textarea>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col2">
+        <input type="submit" value="Veröffentlichen!" />
+
+    </div>
+</form>
