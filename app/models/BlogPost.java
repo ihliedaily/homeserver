@@ -10,7 +10,7 @@ import play.db.jpa.Model;
  * @author ihle
  */
 @Entity
-public class Post extends Model {
+public class BlogPost extends Model {
     
     public String title;
     
@@ -26,7 +26,7 @@ public class Post extends Model {
     @JoinColumn(name = "post_id")
     public List<Picture> pictures;
 
-    public Post(String title, String body, User user, Date created, Date edited, List<Picture> pictures) {
+    public BlogPost(String title, String body, User user, Date created, Date edited, List<Picture> pictures) {
         this.title = title;
         this.body = body;
         this.user = user;

@@ -1,7 +1,7 @@
 #{extends 'main_upper.html' /}
 #{set title:'Post anlegen ...' /}
 
-<form action="@{Post.addPost()}" method="GET">
+<form action="@{Post.savePost()}" method="GET">
 
     <div class="col1">
         <div style="margin-top: 20px;">
@@ -12,8 +12,8 @@
                         <td class="addPostTDLabel">
                             Titel: 
                         </td>
-                        <td>
-                            <input type="text" name="title" />
+                        <td style="width: 540px;">
+                            <input style="width: 100%;" type="text" name="title" />
                         </td>
                     </tr>
                     <tr>
@@ -21,7 +21,7 @@
                             Inhalt: 
                         </td>
                         <td>
-                            <textarea name="body" rows="10" cols="60"></textarea>
+                            <textarea name="body" rows="18" style="width: 100%;"></textarea>
                         </td>
                     </tr>
 
@@ -31,7 +31,8 @@
     </div>
 
     <div class="col2">
-        <input type="submit" value="Veröffentlichen!" />
-
+        <div>
+            <input type="submit" style="width: 200px; " value="Veröffentlichen!" />
+        </div>
     </div>
 </form>

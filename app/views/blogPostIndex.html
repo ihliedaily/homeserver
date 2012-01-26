@@ -1,0 +1,13 @@
+<div id="content">
+    <div class="post">
+    
+        #{list items:posts, as:'post' }
+            <p class="meta"><em><span class="date">${post.created}</span> geschrieben um 12:11 von <a href="#">Ihle</a></em></p>
+            <h2 class="title"><a href="#">${post.title}</a></h2>
+            <div class="entry">
+                <p>${post.body}</p>
+            </div>
+        #{/list}
+    
+    </div>
+</div>

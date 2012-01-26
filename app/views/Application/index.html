@@ -1,20 +1,6 @@
 #{extends 'main.html' /}
 #{set title:'2 Engel für Charlie' /}
 
-<div id="header">
-    <div id="logo">
-        <h1><a href="#">2 Engel für Charlie</a></h1>
-    </div>
-    <div id="menu">
-        <ul>
-            <li><a href="" class="first">Homepage</a></li>
-            <li class="current_page_item"><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="/add-post/">Add post ...</a></li>
-        </ul>
-    </div>
-    <!-- end #menu -->
-</div>
 <!-- end #header -->
 <hr />
 <div id="wrapper">
@@ -52,15 +38,9 @@
 </div>
 <div id="page">
     <div id="page-bgtop">
-        <div id="content">
-            <div class="post">
-                <p class="meta"><em><span class="date">Dienstag, 24. Janur 2012</span> geschrieben um 12:11 von <a href="#">Ihle</a></em></p>
-                <h2 class="title"><a href="#">Der erste Versuch</a></h2>
-                <div class="entry">
-                    <p>Es gibt noch nichts zu berichten :)</p>
-                </div>
-            </div>
-        </div>
+        
+        #{include 'blogPostIndex.html' /}
+        
         <!-- end #content -->
         <div id="sidebar">
             <ul>
